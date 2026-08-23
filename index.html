@@ -1,0 +1,131 @@
+​<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Local File Toolkit — resize, compress & convert without uploading</title>
+
+<meta name="description" content="Resize, compress, convert, merge and split images and PDFs entirely in your browser. Your files never leave your device." />
+
+<link rel="stylesheet" href="./assets/css/styles.css" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🔒</text></svg>" />
+
+</head>
+
+<body>
+
+
+
+<header class="topbar">
+
+  <div class="wrap">
+
+    <a class="brand" href="./"><span class="lock">🔒</span> Local File Toolkit</a>
+
+    <span class="tag">100% in-browser · nothing uploaded</span>
+
+  </div>
+
+</header>
+
+
+
+<!-- AD SLOT: leaderboard. Fixed min-height prevents layout shift. -->
+
+<div class="wrap"><div class="ad-slot ad-leaderboard" data-ad="leaderboard" aria-hidden="true"></div></div>
+
+
+
+<main class="wrap layout">
+
+  <nav class="sidebar" id="toolnav" aria-label="Tools"></nav>
+
+
+
+  <section class="panel">
+
+    <div id="tool-header"></div>
+
+    <div id="tool-form" class="form-grid"></div>
+
+
+
+    <div id="dropzone" class="dropzone" tabindex="0" role="button">
+
+      <strong>Drop files here</strong>
+
+      <span>or click to choose · you can add more while others process</span>
+
+      <input type="file" id="fileinput" multiple hidden />
+
+    </div>
+
+
+
+    <div class="queue-head">
+
+      <h2>Jobs <span id="queue-count" class="muted"></span></h2>
+
+      <div class="queue-actions">
+
+        <button id="zip-all" class="btn" disabled>Download all (.zip)</button>
+
+        <button id="clear-done" class="btn ghost">Clear finished</button>
+
+      </div>
+
+    </div>
+
+    <ul id="jobs" class="jobs"></ul>
+
+  </section>
+
+
+
+  <aside class="rail">
+
+    <!-- AD SLOT: 300x250 / 300x600 -->
+
+    <div class="ad-slot ad-rail" data-ad="rail" aria-hidden="true"></div>
+
+    <div class="note">
+
+      <h3>Why this is private</h3>
+
+      <p>All processing runs in your browser using Canvas and WebAssembly. There is no upload endpoint and no server-side storage — open DevTools → Network and watch: your files generate zero requests.</p>
+
+    </div>
+
+  </aside>
+
+</main>
+
+
+
+<!-- AD SLOT: in-content / footer -->
+
+<div class="wrap"><div class="ad-slot ad-footer" data-ad="footer" aria-hidden="true"></div></div>
+
+
+
+<footer class="footer wrap">
+
+  <p>Files are processed on your device and never transmitted. Third-party ad and CDN scripts may load and can see your IP address, but never your file contents.</p>
+
+  <p><a href="https://github.com/YOUR_USERNAME/document-toolkit">Source on GitHub</a></p>
+
+</footer>
+
+
+
+<script type="module" src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
