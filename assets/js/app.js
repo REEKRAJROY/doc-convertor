@@ -525,8 +525,16 @@ fi.onchange = () => { intake(fi.files); fi.value = ''; };
 dz.addEventListener('drop', e => { if (e.dataTransfer?.files) intake(e.dataTransfer.files); });
 
 // Stop the browser navigating away when a file is dropped outside the zone.
+// Capture the event at the document level so a dropped file never reaches the
+// browser's default "open this file" action.
 
-['dragover','drop'].forEach(ev => window.addEventListener(ev, e => e.preventDefault()));
+['dragover','drop'].forEach(ev => document.addEventListener(ev, e => {
+
+  e.preventDefault();
+
+  if (ev === 'dragover' && e.dataTransfer) e.dataTransfer.dropEffect = 'copy';
+
+}, true));
 
 
 
@@ -548,4 +556,4 @@ window.addEventListener('beforeunload', e => {
 
 selectTool(current);
 
-mountAds();​
+mountAds();

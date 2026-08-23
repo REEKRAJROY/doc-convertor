@@ -98,4 +98,4 @@ export class WorkerPool {
 
 
 
-export const pool = new WorkerPool();​
+export const pool = new WorkerPool();

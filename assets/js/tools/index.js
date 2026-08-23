@@ -1,4 +1,4 @@
-​import { resizeCompress, convert, stripMeta } from './image.js';
+import { resizeCompress, convert, stripMeta } from './image.js';
 
 import { merge, split, imagesToPdf, pdfToImages, compressPdf } from './pdf.js';
 

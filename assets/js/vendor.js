@@ -1,4 +1,4 @@
-​// Single place to swap CDN → vendored copies. Semver ranges avoid pinning to
+// Single place to swap CDN → vendored copies. Semver ranges avoid pinning to
 
 // patch versions; pin exactly before you rely on this in production.
 

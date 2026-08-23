@@ -1,4 +1,4 @@
-​import {
+import {
 
   stripMetadata, applyDpi, padJpegToMin, sniffMime
 

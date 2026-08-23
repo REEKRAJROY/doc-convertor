@@ -1,4 +1,4 @@
-​import { loadPdfLib, loadJsZip, loadPdfJs } from '../vendor.js';
+import { loadPdfLib, loadJsZip, loadPdfJs } from '../vendor.js';
 
 import { fmtBytes, replaceExt, sniffMime } from '../bytes.js';
 
